@@ -1,0 +1,90 @@
+/* 
+Hongxiao Lyu (Daniel)
+Student NO.1664671
+04/18/2017
+CSE154 - A(I)
+TA: Christine Ta
+Assignment: NO.3: speedreader.css
+
+This is a style sheet for the speedreader.html. It defines rules for different 
+contents in the webpage.
+*/
+
+
+body {
+    background-color: #EAF6F6;
+    font-family: Garamond, serif;
+    font-size: 12pt;
+}
+
+h1, #output{
+    text-align: center;
+}
+
+#outputContainer, .outerContainer1, #inputContainer {
+    display: flex;
+}
+
+#outputContainer, .outerContainer1 {
+    justify-content: center;
+}
+
+#output, .fieldSetsTitle {
+    font-weight: bold;
+}
+
+#output, #textInput, button {
+    background-color: #FFFFFF;
+}
+
+#output {
+    width: 80%;
+    height: 100px;
+    border: solid 2px #8EBEBE;
+    border-radius: 5px;
+    font-size: 36pt;
+    font-family: monospace;
+    line-height: 100px;
+}
+
+.outerContainer1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.fieldSetsTitle {
+    border-bottom: solid 1px #8EBEBE;
+    padding: 2px;
+    text-align: left;
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+#textInput, button {
+    border: solid gray 1px;
+}
+
+#inputContainer {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+button, img {
+    width: 70px;
+}
+
+#w3c {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+button:disabled {
+    background-color: lightgray;
+}
